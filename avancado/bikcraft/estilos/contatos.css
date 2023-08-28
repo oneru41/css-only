@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --cor-0: #ffffff;
+    --cor-1: #f7f7f7;
+    --cor-2: #ededed;
+    --cor-3: #dedede;
+    --cor-4: #cccccc;
+    --cor-5: #b2b2b2;
+    --cor-6: #9c9c9c;
+    --cor-7: #717171;
+    --cor-8: #595959;
+    --cor-9: #404040;
+    --cor-10: #2e2e2e;
+    --cor-11: #111111;
+    --cor-12: #000000;
+    --cor-p1: #ffbb00;
+    --cor-p2: #e4a30b;
+    --cor-p3: #a66f00;
+    --cor-p4: #664400;
+    --cor-p5: #332200;
+}
+
+.intro-bg{
+    background-color: var(--cor-11);
+    padding: 60px 0px;
+}
+.intro-container{
+    padding: 0px 20px;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro-item{
+    background: url(../imagens/top-right.svg) no-repeat top right;
+}
+.intro-item h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--cor-5);
+    font-size: 1.54em;
+    margin-bottom: 4px;
+}
+.intro-item h1{
+    font-size: 4em;
+}
+
+.principal-bg{
+    background-color: var(--cor-11);
+    box-shadow: inset 0px -28vh white;
+    margin-bottom: 60px;
+}
+.principal-container{
+    max-width: 1200px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+.principal-item{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    border-radius: 5px;
+    box-shadow: 
+    0px 1px 5px rgba(0, 0, 0, 0.233);
+}
+.principal-item-1{
+    background: black url(../imagens/bottom-left.svg) no-repeat bottom 20px left 20px;
+    color: white;
+    padding: 60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.principal-item a{
+    color: var(--cor-4);
+    font-style: normal;
+}
+.principal-item-1 h3{
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.principal-item-1 ul{
+    line-height: 2;
+    color: var(--cor-4);
+    margin-bottom: 22px;
+    padding-left: 28px;
+    background: url(../imagens/local.svg) no-repeat top 5px left 0px;
+}
+.principal-item-1 .email{
+    background: url(../imagens/email.svg) no-repeat top 5px left 0px;
+    margin-bottom: 32px;
+    padding-left: 28px;
+    line-height: 2;
+}
+.principal-item-1 .telefone{
+    margin-bottom: 60px;
+    padding-left: 28px;
+    background: url(../imagens/telefone.svg) no-repeat top 0px left 0px;
+}
+.principal-item-1 .contato-item{
+    padding-left: 28px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 30px;
+}
+.principal-item-2{
+    background: white url(../imagens/bottom-right.svg) no-repeat bottom 20px right 20px;
+    padding: 60px;
+}
+.principal-bg form{
+    display: grid;
+    grid-template-areas: 
+    "nome telefone"
+    "email email"
+    "mensagem mensagem"
+    "botao botao"
+    ;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+form input{
+    width: 100%;
+    border: .5px solid var(--cor-2);
+    font-size: 1em;
+    border-radius: 4px;
+    background-color: var(--cor-1);
+    padding: 15px 10px;
+}
+.campo-mensagem input{
+    height: 150px;
+    margin-bottom: 20px;
+}
+form label{
+    line-height: 2;
+}
+.campo-nome{
+    grid-area: nome;
+}
+.campo-telefone{
+    grid-area: telefone;
+}
+.campo-email{
+    grid-area: email;
+}
+.campo-mensagem{
+    grid-area: mensagem;
+}
+form > button{
+    grid-area: botao;
+    border: none;
+    text-transform: uppercase;
+    width: max-content;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    color: var(--cor-p5);
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-radius: 4px;
+}

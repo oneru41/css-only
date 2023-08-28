@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.ponto-amarelo{
+    color: var(--cor-p1);
+}
+:root {
+    --cor-0: #ffffff;
+    --cor-1: #f7f7f7;
+    --cor-2: #ededed;
+    --cor-3: #dedede;
+    --cor-4: #cccccc;
+    --cor-5: #b2b2b2;
+    --cor-6: #9c9c9c;
+    --cor-7: #717171;
+    --cor-8: #595959;
+    --cor-9: #404040;
+    --cor-10: #2e2e2e;
+    --cor-11: #111111;
+    --cor-12: #000000;
+    --cor-p1: #ffbb00;
+    --cor-p2: #e4a30b;
+    --cor-p3: #a66f00;
+    --cor-p4: #664400;
+    --cor-p5: #332200;
+}
+
+/* seguros */
+
+.seguros-bg{
+    background-color: var(--cor-11);
+    color: white;
+    padding: 60px 25px;
+}
+.seguros-texto{
+    background: url(../imagens/top-right.svg) no-repeat top right;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-size: 2.7em;
+    max-width: 1200px;
+}
+.seguros-texto h2{
+    margin-bottom: 5px;
+    color: var(--cor-6);
+    font-size: 0.575em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.seguros-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    align-items: center;
+}
+.seguros-bg li{
+    list-style-image: url(../imagens/lista.svg);
+}
+.seguros-float-prata,.seguros-float-ouro{
+    float: right;
+}
+.seguros-float-prata h1, .seguros-float-ouro h1{
+    font-size: 2em;
+}
+.seguros-float-prata p, .seguros-float-ouro p{
+    font-size: .8em;
+    color: var(--cor-6);
+    text-align: right;
+}
+.seguros-prata, .seguros-ouro{
+    border-radius: 5px;
+    background-color: var(--cor-12);
+    padding: 30px 30px 50px 60px;
+}
+.seguros-prata>h1, .seguros-ouro>h1{
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 600;
+}
+.seguros-prata>ul, .seguros-ouro>ul{
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 2.5;
+    margin-bottom: 40px;
+}
+.seguros-prata>a{
+    background-color: var(--cor-10);
+    color: var(--cor-0);
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+.seguros-ouro>a{
+    background: linear-gradient(#ffbf00, #f2a50c);
+    color: var(--cor-p5);
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+.seguros-ouro>a:hover{
+    background: linear-gradient(#ffb60d, #e59317);
+}
+.seguros-prata>a:hover{
+    background-color: var(--cor-9);
+}
+.seguros-prata>h1{
+    color: var(--cor-6);
+}
+.seguros-ouro>h1{
+    color: var(--cor-p1);
+}
+
+/* vantagens */
+
+.vantagens-bg{
+    background-color: var(--cor-12);
+    padding: 120px 30px;
+    
+    color: var(--cor-0);
+}
+.vantagens-texto{
+    max-width: 1200px;
+    margin: 0px auto;
+    font-size: 2.7em;
+    margin-bottom: 60px;
+}
+.vantagens-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.vantagens-container ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 40px;
+}
+.vantagens-container li>h1{
+    font-weight: 400;
+    margin: 10px 0px;
+}
+.vantagens-container li>p{
+    color: var(--cor-5);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* perguntas */
+
+.perguntas-bg{
+    background-color: var(--cor-0);
+    padding: 120px 30px;
+}
+.perguntas-texto{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 2.7em;
+    margin-bottom: 90px;
+}
+.perguntas-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.perguntas-container ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+}
+.perguntas-container li{
+    padding: 20px;
+}
+.perguntas-container li:nth-child(odd){
+    background-color: var(--cor-1);
+}
+.perguntas-container li>h1{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.perguntas-container p{
+    margin-left: 20px;
+    color: var(--cor-9);
+    max-width: 700px;
+    line-height: 1.5;
+}
+.perguntas-container li>h1::before{
+    content: '';
+    margin-right: 8px;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    display: inline-block;
+}
+
+@media (max-width:1200px){
+    .seguros-bg{
+        padding: 60px 20px;
+    }
+    .seguros-texto{
+        font-size: 2em;
+    }
+    .vantagens-bg{
+        padding: 120px 20px;
+    }
+    .vantagens-texto{
+        font-size: 2em;
+    }
+    .perguntas-bg{
+        padding: 120px 20px;
+    }
+    .perguntas-texto{
+        font-size: 2em;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:1060px){
+    .vantagens-container ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:800px){
+    .seguros-bg{
+        padding: 50px 20px;
+    }
+    .seguros-texto{
+        font-size: 1.3em;
+        margin-bottom: 40px;
+    }
+    .seguros-container{
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .seguros-prata h1, .seguros-ouro h1{
+        font-size: 1.5em;
+    }
+}
+@media (max-width:650px){
+    .vantagens-container ul{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}
